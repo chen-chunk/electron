@@ -8,5 +8,5 @@ contextBridge.exposeInMainWorld('versions', {
 
 contextBridge.exposeInMainWorld('appControl', {
   close: () => ipcRenderer.send('windowCommand', 'close'),
-  minimize: () => ipcRenderer.send('windowCommand', 'minimize')
+  minimize: () => ipcRenderer.send('windowCommand', 'minimize'),
 })
